@@ -11,3 +11,4 @@ class Location:
 #         self.consists_of = {'room1', 'room2', 'room3', 'room4', 'room5', 'room6'}
 # А мне этот код вообще нужен?
 
+# class RoomOne(Location):

@@ -45,3 +45,13 @@
 #     a = int(input("Хотите просто пойти вперёд?"))
 #     if a == 1:
 #         print("Вы решаете пойти вперёд")
+
+# class Location:  # Сделать, доработать
+#     def __init__(self, name):
+#         self.name = name
+#         self.places = {}
+#         self.connected_locations = {}
+#         self.npcs = {"enemys": []}  # НаВеРнОе сделать словарём
+#
+#     def exit(self):
+#         pass

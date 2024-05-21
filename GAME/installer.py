@@ -7,4 +7,9 @@ def import_lib(name):
     except ImportError:
         pip.main(['install', name])  # ставим библиотеку если её нет
     return __import__(name)  # возвращаем библиотеку
+
+
 termcolor = import_lib('termcolor')
+environs = import_lib('environs')
+telebot = import_lib('telebot')
+
