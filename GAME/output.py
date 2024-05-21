@@ -1,13 +1,20 @@
 from logger import debug
 import environs
 import logger
-# import telebot
-#
-#
+from os import system
+from sys import platform
+
 env = environs.Env()
 env.read_env()
-#
-# bot = telebot.TeleBot(env('BOT_TOKEN'))
+
+
+def clear():
+    if platform == 'linux' or platform == 'linux':
+        system('clear')
+    elif platform == 'win32':
+        system('cls')
+    elif platform == "darwin":
+        system('cls')
 
 
 def say(*msg):
@@ -15,33 +22,14 @@ def say(*msg):
         for i in msg:
             if env('DEBUG') == 'true':
                 debug('say function:')
-            if env.int('MODE') == 1:  # Исправить, если можно
+            if env.int('MODE') == 1:
                 print(i)
-            # elif env.int('MODE') == 2:
-            #     bot_say(i)
-
     except AttributeError:
         logger.error("Невозможен вывод", "Возможно, отсутствует или некорректна переменная 'mode' в "
                                          "файле конфигурации")
 
 
-# def bot_say(i):
-#     bot.send_message(user_id, i)
-
 def question_int(msg):
     say(msg)
     a = int(input())
     return a
-#
-#
-#
-#
-#
-#
-#
-# @bot.message_handler(commands=['start'])
-# def bot_start(msg):
-#     bot.send_message(msg.chat.id, 'бот запущен')
-
-
-# bot.polling(none_stop=True)

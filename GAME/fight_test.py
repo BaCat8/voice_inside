@@ -7,7 +7,7 @@ from output import say, question_int
 
 class Enemy:
     def __init__(self, name):
-        debug("Создание объекта 'Player'")
+        debug("Создание объекта 'Enemy'")
         self.name = name
 
     def take_damage(self, damage):
@@ -69,5 +69,4 @@ def demo_fight():
     player1 = Player("Игрок")
     enemy1 = Clot()
     master = Master()
-    print(enemy1.name)
     master.fight(player1, enemy1)
