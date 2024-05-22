@@ -1,6 +1,4 @@
 from sys import exit
-# import config
-# from config import debug
 
 try:
     from termcolor import colored

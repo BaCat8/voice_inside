@@ -41,8 +41,8 @@ class Master:
     def fight(player: Player, enemy: Enemy):
         tick = 2
         while tick != 0:
-            debug(f"Здоровье врага: {enemy.health}")
-            debug(f"Здоровье игрока: {player.health}")
+            say(f"Здоровье врага: {enemy.health}")
+            debug(f"Ваше здоровье: {player.health}")
             if player.health > 0 and enemy.health > 0:
                 if tick % 2 == 0:
                     a = question_int("Выберите действие: 1) Атака 2) Ничего")
@@ -61,7 +61,7 @@ class Master:
                     say("Вы погибли...")
                     exit()
                 elif enemy.health <= 0:
-                    say("Противник погиб")
+                    say("Противник побеждён")
                 tick = 0
 
 
