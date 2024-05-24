@@ -1,9 +1,9 @@
-class Location:
-    def __init__(self, name, des="None"):
-        self.name: str = name
-        self.description: str = des
-        # self.connected_locations = {}
-
+# class Location:
+#     def __init__(self, name, des="None"):
+#         self.name: str = name
+#         self.description: str = des
+#         # self.connected_locations = {}
+#
 
 # class DemoLocation("Demo_Location"):
 #     def __init__(self):

@@ -11,5 +11,5 @@ def import_lib(name):
 
 termcolor = import_lib('termcolor')
 environs = import_lib('environs')
-telebot = import_lib('telebot')
+
 

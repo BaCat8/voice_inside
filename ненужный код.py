@@ -55,3 +55,16 @@
 #
 #     def exit(self):
 #         pass
+
+# telebot = import_lib('telebot')
+# import telebot
+# bot = telebot.TeleBot(env('BOT_TOKEN'))
+# @bot.message_handler(commands=['start'])
+# def bot_start(msg):
+#     bot.send_message(msg.chat.id, 'бот запущен')
+
+# def test_location():
+# test_location()
+# if env('MODE') == 1:
+#     test_location()
+# elif
